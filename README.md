@@ -10,23 +10,38 @@
 
 ```
 historical-stories/
-├── AGENTS.md              # Agent 提示词配置
-├── README.md              # 项目说明
+├── AGENTS.md                          # Agent 提示词配置
+├── README.md                          # 项目说明
 └── logs/
-    ├── progress.md        # 进度跟踪
-    ├── eras/              # 时代故事图谱
+    ├── progress.md                    # 进度跟踪
+    ├── eras/                          # 时代故事图谱（每个朝代一个文件）
     │   ├── 00_sanhuang_wudi.md
     │   └── 01_xia.md
-    └── content/           # 每日故事档案
-        └── yyyyMMdd.md
+    └── contents/                      # 故事原文（按朝代分目录，每故事独立文件）
+        ├── 00_sanhuang_wudi/
+        │   ├── sanhuang_01.md
+        │   ├── sanhuang_02.md
+        │   └── ...
+        └── 01_xia/
+            ├── xia_01.md
+            ├── xia_02.md
+            └── ...
 ```
+
+### 文件命名规则
+
+- **时代图谱**：`eras/XX_name.md`（XX 为序号，如 `01_xia.md`）
+- **故事文件**：`contents/XX_name/{era}_{number}.md`（如 `contents/01_xia/xia_14.md`）
+- **进度文件**：`progress.md`
 
 ## 当前进度
 
-| 时代 | 状态 |
-|------|------|
-| 三皇五帝 | ✅ 已完成 |
-| 夏朝 | 🔄 进行中 |
+| 时代 | 状态 | 故事数 |
+|------|------|--------|
+| 三皇五帝 | ✅ 已完成 | 23 篇 |
+| 夏朝 | 🔄 进行中 | 28/33 篇 |
+
+夏朝剩余 5 篇为补充题材（水利、青铜、天文、法制、疆域），待输出。
 
 ## 使用方式
 
@@ -39,6 +54,7 @@ historical-stories/
 - 每篇故事采用三段结构：故事背景 / 正文 / 备注
 - 正文使用叙事文自然段落，字数目标 3000 字以上
 - 优先使用权威史料，争议内容在备注说明
+- 每篇故事独立存储为以故事 ID 命名的 Markdown 文件
 
 ## 许可证
 
