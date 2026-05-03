@@ -1,5 +1,6 @@
 ---
 id: sanhuang_07
+era: sanhuang
 section: 黄帝时期
 title: 伶伦作乐与音乐文明
 ---

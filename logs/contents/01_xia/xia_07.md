@@ -1,5 +1,6 @@
 ---
 id: xia_07
+era: xia
 section: 太康时期
 title: 太康失国与后羿代夏
 ---

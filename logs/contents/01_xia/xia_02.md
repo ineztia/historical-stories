@@ -1,5 +1,6 @@
 ---
 id: xia_02
+era: xia
 section: 禹时期
 title: 禹传子启与世袭制确立
 ---

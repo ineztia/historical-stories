@@ -1,5 +1,6 @@
 ---
 id: xia_06
+era: xia
 section: 启时期
 title: 启的宫廷生活与早期宫殿
 ---

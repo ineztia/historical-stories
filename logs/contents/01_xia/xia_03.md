@@ -1,6 +1,7 @@
 ---
 id: xia_03
-section: 启时期
+era: xia
+section: 禹时期
 title: 九鼎建立与王权象征
 ---
 

@@ -1,5 +1,6 @@
 ---
 id: xia_05
+era: xia
 section: 启时期
 title: 钧台之享与诸侯朝觐
 ---

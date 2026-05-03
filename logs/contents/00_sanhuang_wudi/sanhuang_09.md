@@ -1,5 +1,6 @@
 ---
 id: sanhuang_09
+era: sanhuang
 section: 黄帝时期
 title: 嫘祖养蚕与纺织文明
 ---

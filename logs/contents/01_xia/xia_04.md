@@ -1,5 +1,6 @@
 ---
 id: xia_04
+era: xia
 section: 启时期
 title: 启伐有扈氏与甘之战
 ---

@@ -1,5 +1,6 @@
 ---
 id: xia_01
+era: xia
 section: 禹时期
 title: 涂山之会与九州划定
 ---

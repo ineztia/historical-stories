@@ -1,5 +1,6 @@
 ---
 id: sanhuang_08
+era: sanhuang
 section: 黄帝时期
 title: 隶首作数与数学萌芽
 ---

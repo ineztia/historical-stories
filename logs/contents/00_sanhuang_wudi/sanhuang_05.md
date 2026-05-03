@@ -1,5 +1,6 @@
 ---
 id: sanhuang_05
+era: sanhuang
 section: 黄帝时期
 title: 黄帝战蚩尤与华夏统一
 ---
