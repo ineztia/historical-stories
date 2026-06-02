@@ -10,16 +10,20 @@
 
 ```
 historical-stories/
-├── AGENTS.md                          # Agent 主提示词（角色、规则、执行流程）
+├── AGENTS.md                          # Agent 主提示词（角色、流程路由、模块索引）
 ├── README.md                          # 项目说明（本文件）
 ├── .agents/
-│   └── file-recording-spec.md         # 文件记录规范（§1–§6，从 AGENTS.md 拆分）
+│   ├── narrative-skeleton.md         # 叙事骨架与故事规划规范
+│   ├── writing-standard.md           # 写作与校对统一标准（含弹性 Checklist）
+│   ├── parallel-narrative.md         # 并行叙事图谱规范
+│   └── file-recording-spec.md        # 文件记录规范（§1–§7）
 └── logs/
     ├── progress.md                    # 进度跟踪
     ├── eras/                          # 时代故事图谱（每朝代一个文件）
     │   ├── 00_sanhuang_wudi.md        # 三皇五帝
     │   ├── 01_xia.md                  # 夏朝
-    │   └── 02_shang.md                # 商朝
+    │   ├── 02_shang.md                # 商朝
+    │   └── 03_xizhou.md               # 西周
     └── contents/                      # 故事原文（按朝代分目录）
         ├── 00_sanhuang_wudi/          # 25 篇（sanhuang_01–25）
         ├── 01_xia/                    # 33 篇 + 2 篇补充（xia_01–33, xia_25x, xia_28x）
@@ -28,8 +32,8 @@ historical-stories/
 
 ### 文件命名规则
 
-- **规则主文件**：`AGENTS.md`（主提示词）
-- **规则子模块**：`.agents/file-recording-spec.md`（文件记录规范，AGENTS.md §4 引用）
+- **主提示词**：`AGENTS.md`（角色定位 + 执行流程路由 + 模块索引）
+- **规则模块**：`.agents/*.md`（各模块自包含，不交叉引用）
 - **时代图谱**：`eras/XX_name.md`（XX 为序号，如 `01_xia.md`）
 - **故事文件**：`contents/XX_name/{era}_{number}.md`（如 `contents/01_xia/xia_14.md`）
 - **记忆手卡**：`contents/XX_name/{era}_{number}x.md`（如 `shang_15x.md`），便于背诵复述的速查版，不计入正式故事数
@@ -37,15 +41,17 @@ historical-stories/
 
 ## 提示词架构
 
-`AGENTS.md` 为 Agent 主提示词，§4 文件记录规范已拆分至独立模块 [`.agents/file-recording-spec.md`](.agents/file-recording-spec.md)（独立编号 §1–§6），避免与本文件 §1–§4 编号冲突。
+本项目采用模块化提示词架构。`AGENTS.md` 为路由入口，按执行阶段按需加载对应模块。
 
-| 章节 | 所在文件 | 内容 |
-|------|---------|------|
-| §1 角色与目标 | AGENTS.md | 历史叙事者定位，通史叙事总目标 |
-| §2 核心规则 | AGENTS.md | 弹性原则、叙事骨架、故事形态、篇幅自检、正文规范、视角菜单、硬约束红线 |
-| §3 执行流程 | AGENTS.md | 启动/新时代处理/故事列表生成/故事输出与文件更新/用户修改处理 |
-| §4 文件记录规范 | AGENTS.md → 引用 | 路径规范、谱系表与故事列表模板、进度表、YAML 元数据、状态符号、命名规范 |
-| §1–§6 文件记录细则 | .agents/file-recording-spec.md | 文件路径与写入规范、eras 模板、progress 模板、YAML 元数据、状态符号、命名规范 |
+| 模块 | 文件 | 职责 | 读取时机 |
+|------|------|------|----------|
+| 主提示词 | `AGENTS.md` | 角色定位、执行流程路由、模块索引 | 每次启动 |
+| 叙事骨架 | `.agents/narrative-skeleton.md` | 时间轴结构、篇型体系、故事列表生成方法 | 新时代处理、生成故事列表 |
+| 写作标准 | `.agents/writing-standard.md` | 写作统一标准 + 弹性校对 Checklist | 故事输出与审查校对 |
+| 并行图谱 | `.agents/parallel-narrative.md` | 文学巨著并行线的判定、写作与管理 | 并行图谱判定及输出 |
+| 文件记录 | `.agents/file-recording-spec.md` | 文件路径、模板、元数据、命名规范 | 任何文件写入操作 |
+
+**架构原则**：各模块自包含无交叉引用，所有跨模块路由仅通过 AGENTS.md 完成。
 
 ## 当前进度
 
@@ -78,9 +84,9 @@ historical-stories/
 ## 使用方式
 
 1. 启动 Agent，先读 `logs/progress.md` 识别当前状态
-2. 按 `AGENTS.md` 执行路由加载对应模块（§4 引用 `.agents/file-recording-spec.md`）
+2. 按 `AGENTS.md` 执行路由按需加载对应模块
 3. 按流程进入新时代 → 确认时代谱系 → 确认故事列表 → 逐篇输出
-4. 每篇故事「写入 → 读回 → 就地修订 → 状态落定」，自检未通过前不更新进度
+4. 每篇故事「写入 → 审查校对 → 就地修订 → 状态落定」，校对未通过前不更新进度
 
 ## 内容规范
 
