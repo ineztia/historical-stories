@@ -24,8 +24,8 @@
 | 模块文件 | 职责 | 读取时机 |
 |---------|------|---------|
 | [`.agents/narrative-skeleton.md`](.agents/narrative-skeleton.md) | 时间轴结构、篇型体系、故事列表生成方法 | 新时代处理（§3.2）、故事列表生成（§3.3） |
-| [`.agents/writing-standard.md`](.agents/writing-standard.md) | 写作统一标准 + 弹性校对 Checklist | 故事输出（§3.4）写作与校对 |
-| [`.agents/parallel-narrative.md`](.agents/parallel-narrative.md) | 并行叙事图谱（文学巨著线）的判定、写作与管理 | 并行图谱判定（§3.3 末）、并行故事输出 |
+| [`.agents/writing-standard.md`](.agents/writing-standard.md) | 写作统一标准 + 弹性校对 Checklist | 正史故事输出（§3.4.1）：写作与校对 |
+| [`.agents/parallel-narrative.md`](.agents/parallel-narrative.md) | 并行叙事图谱（文学巨著线）的判定、写作与管理 | 并行图谱判定（§3.3 末）、并行故事输出（§3.4.2） |
 | [`.agents/file-recording-spec.md`](.agents/file-recording-spec.md) | 文件路径、模板结构、元数据、命名规范 | 任何文件写入操作 |
 
 **模块使用规则**：
@@ -36,6 +36,8 @@
 ---
 
 ## 3. 执行流程
+
+> **全流程通则**：任一文件操作失败立即提示用户并等待确认，不得跳过。
 
 ### 3.1 启动与状态读取
 
@@ -71,20 +73,36 @@
 
 ### 3.4 故事输出与文件更新
 
+1. 确定当前篇目：以 `progress.md`「下一个故事」字段为准，逐篇处理
+2. **判断叙事线类型**：根据当前故事在 `progress.md` 中所属分区判定——
+   - 属于**正史进度** → §3.4.1
+   - 属于**并行图谱进度** → §3.4.2
+
+**输出优先级**：默认按 `progress.md` 当前指向执行；用户可随时指定切换叙事线。
+
+#### 3.4.1 正史故事输出
+
 > **前置读取**：`.agents/writing-standard.md` + `.agents/file-recording-spec.md`
 
-1. 按顺序逐篇处理，每次只处理一篇
-2. **史料预研**：按 `writing-standard.md` §2.1 建卡，记入备注「史源索引」
-3. **写入草稿**：按写作标准生成完整故事，按 `file-recording-spec.md` §1 写入 `contents/<era_dir>/<id>.md`；朝代目录不存在须先创建
-4. **审查校对 + 就地修订**：重新读取文件，按 `writing-standard.md` §7.3 弹性 Checklist 逐项过（先判断适用性再校对）；全部通过前不得进入下一步
-5. **更新进度**：通过后更新 `progress.md` 与 `eras/*.md`（⏳ → ✅）
+1. **史料预研**：按 `writing-standard.md` §2.1 建卡，记入备注「史源索引」
+2. **写入草稿**：按写作标准生成完整故事，按 `file-recording-spec.md` §1 写入文件；目录不存在须先创建
+3. **审查校对 + 就地修订**：重新读取文件，按 `writing-standard.md` §7.3 弹性 Checklist 逐项过（先判断适用性再校对）；全部通过前不得进入下一步
+4. **更新进度**：通过后更新 `progress.md` 与 `eras/*.md`（⏳ → ✅）
 
-**贯穿性约定**：任一文件操作失败立即提示用户并等待确认，不得跳过。
+#### 3.4.2 并行叙事故事输出
 
-### 3.5 用户修改处理
+> **前置读取**：`.agents/parallel-narrative.md` + `.agents/file-recording-spec.md`
+
+1. **写入草稿**：按 `parallel-narrative.md` §5 写作规范生成完整故事，按 `file-recording-spec.md` §1 写入文件
+2. **审查校对 + 就地修订**：重新读取文件，按 `parallel-narrative.md` §5.5 校对 Checklist 逐项过；全部通过前不得进入下一步
+3. **更新进度**：通过后更新 `progress.md` 与 `eras/*.md`（⏳ → ✅）
+
+
+### 3.5 用户指令处理
 
 用户对谱系/故事列表/已输出故事提出修改：
 
 - 立即回写对应文件（`eras/*.md`、`progress.md` 或 `contents/<era_dir>/<id>.md`）
 - 后续叙事以最新记录为准
 - 若影响后续已规划故事，在 `eras/*.md`「备注」列或故事「备注」段标注联动
+- 用户要求创建或输出并行图谱时：读取 `.agents/parallel-narrative.md`，按其 §2–§4 创建图谱（若尚未创建），或直接进入 §3.4.2 输出故事
