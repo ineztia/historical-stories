@@ -13,10 +13,9 @@ historical-stories/
 ├── AGENTS.md                          # Agent 主提示词（角色、流程路由、模块索引）
 ├── README.md                          # 项目说明（本文件）
 ├── .agents/
-│   ├── narrative-skeleton.md         # 叙事骨架与故事规划规范
-│   ├── writing-standard.md           # 写作与校对统一标准（含弹性 Checklist）
-│   ├── parallel-narrative.md         # 并行叙事图谱规范
-│   └── file-recording-spec.md        # 文件记录规范（§1–§7）
+│   ├── narrative.md                   # 公共部分 + 正史叙事骨架 + 文学并行图谱（§1–§3）
+│   ├── writing.md                     # 写作与校对统一标准（公共规范 + 正史/文学专项）
+│   └── file-spec.md                   # 文件记录规范（§1–§7）
 └── logs/
     ├── progress.md                    # 进度跟踪
     ├── eras/                          # 时代故事图谱（每朝代一个文件）
@@ -46,10 +45,9 @@ historical-stories/
 | 模块 | 文件 | 职责 | 读取时机 |
 |------|------|------|----------|
 | 主提示词 | `AGENTS.md` | 角色定位、执行流程路由、模块索引 | 每次启动 |
-| 叙事骨架 | `.agents/narrative-skeleton.md` | 时间轴结构、篇型体系、故事列表生成方法 | 新时代处理、生成故事列表 |
-| 写作标准 | `.agents/writing-standard.md` | 写作统一标准 + 弹性校对 Checklist | 故事输出与审查校对 |
-| 并行图谱 | `.agents/parallel-narrative.md` | 文学巨著并行线的判定、写作与管理 | 并行图谱判定及输出 |
-| 文件记录 | `.agents/file-recording-spec.md` | 文件路径、模板、元数据、命名规范 | 任何文件写入操作 |
+| 叙事骨架 | `.agents/narrative.md` | 时间轴结构、篇型体系、覆盖承接规则、故事列表生成方法（§1–§3：公共 + 正史 + 文学） | 新时代处理、生成故事列表、并行图谱判定 |
+| 写作标准 | `.agents/writing.md` | 写作与校对统一标准（公共规范 + 正史/文学专项，含弹性 Checklist） | 故事输出与审查校对 |
+| 文件记录 | `.agents/file-spec.md` | 文件路径、模板、元数据、命名规范 | 任何文件写入操作 |
 
 **架构原则**：各模块自包含无交叉引用，所有跨模块路由仅通过 AGENTS.md 完成。
 
