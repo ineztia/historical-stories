@@ -1,7 +1,7 @@
 ---
 id: xia_28y
 era: xia
-section: 夏朝全时代（通论补充篇）
+section: 夏朝全时代·综合通论
 title: 氏族记忆图谱——夏朝二十氏族六幕剧
 ---
 

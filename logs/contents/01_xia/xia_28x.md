@@ -1,7 +1,7 @@
 ---
 id: xia_28x
 era: xia
-section: 夏朝全时代（通论补充篇）
+section: 夏朝全时代·综合通论
 title: 氏族万方——夏朝诸姓谱系、兴衰与天下格局
 ---
 
