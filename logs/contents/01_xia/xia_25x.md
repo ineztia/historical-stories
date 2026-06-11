@@ -1,7 +1,7 @@
 ---
 id: xia_25x
 era: xia
-section: 扃—发时期（合篇）
+section: 扃—发时期（群像）
 title: 末世五代——从权力传承危机到天命崩塌
 ---
 

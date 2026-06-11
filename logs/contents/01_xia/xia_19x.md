@@ -1,7 +1,7 @@
 ---
 id: xia_19x
 era: xia
-section: 槐—不降时期（合篇）
+section: 槐—不降时期（群像）
 title: 文治四代——从九夷来朝到守成僵化
 ---
 

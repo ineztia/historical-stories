@@ -12,15 +12,15 @@
 historical-stories/
 ├── AGENTS.md              # Agent 主提示词（角色、流程路由、模块索引）
 ├── README.md              # 项目说明
-├── .agents/               # 规则模块（叙事框架 / 写作标准 / 文件规范）
+├── .agents/               # 规则模块（说史架构 / 写作标准 / 文件规范）
 └── logs/
     ├── progress.md        # 进度跟踪
-    ├── eras/              # 时代统绪（每朝代一个文件）
+    ├── eras/              # 传承图谱（每朝代一个文件）
     └── contents/          # 故事原文（按朝代分目录）
 ```
 
 **命名约定**：
-- 时代统绪：`eras/XX_name.md`（如 `01_xia.md`）
+- 传承图谱：`eras/XX_name.md`（如 `01_xia.md`）
 - 故事文件：`contents/XX_name/{era}_{number}.md`（如 `xia_14.md`）
 - 记忆手卡：`contents/XX_name/{era}_{number}x.md`（不计入正式故事数）
 
@@ -30,7 +30,7 @@ historical-stories/
 
 | 模块 | 文件 | 职责 |
 |------|------|------|
-| 叙事框架 | `.agents/narrative.md` | 时间轴结构、篇型体系、故事列表生成方法 |
+| 说史架构 | `.agents/narrative.md` | 时间轴结构、篇型体系、故事列表生成方法 |
 | 写作标准 | `.agents/writing.md` | 写作与校对统一标准（含弹性 Checklist） |
 | 文件规范 | `.agents/file-spec.md` | 文件路径、模板、元数据、命名 |
 
@@ -51,7 +51,7 @@ historical-stories/
 
 1. 启动 Agent，先读 `logs/progress.md` 识别当前状态
 2. 按 `AGENTS.md` 路由按需加载模块
-3. 执行流程：新时代 → 确认时代统绪 → 确认故事列表 → 逐篇输出
+3. 执行流程：新时代 → 确认传承图谱 → 确认故事列表 → 逐篇输出
 4. 每篇故事须经「写入 → 审查校对 → 就地修订 → 状态落定」，校对未通过前不更新进度
 
 ## 内容规范
