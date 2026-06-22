@@ -70,7 +70,7 @@
 
 > 前置读取：[writing.md §1–§6](.agents/writing.md)；命名/路径见 §5；元数据与模板见 [file-spec.md §1/§3](.agents/file-spec.md)。
 
-1. **史料预研**：两线均按 [writing.md §2.1](.agents/writing.md) 建史源索引
+1. **史料预研**：正史线按 [writing.md §2.1](.agents/writing.md) 建 6 字段史源索引；文学线按 [writing.md §2.1](.agents/writing.md) 建 5 字段简化索引（不含原文摘句、不设「史源原文」专项）
 2. **写入草稿**：按 [writing.md §1–§6](.agents/writing.md) 生成完整故事
 3. **文件落位**：按 [file-spec.md §3](.agents/file-spec.md) 元数据写入 `logs/contents/<era_dir>/<id>.md`；目录不存在须先创建；文件已存在时校验 YAML `id`（一致则覆盖，不一致则报错并暂停）
 
