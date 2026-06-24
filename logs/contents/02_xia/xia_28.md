@@ -1,4 +1,4 @@
----
+﻿---
 id: xia_28
 era: xia
 section: 桀时期

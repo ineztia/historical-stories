@@ -1,6 +1,6 @@
----
-id: sanhuang_05
-era: sanhuang
+﻿---
+id: sanhuangwudi_05
+era: sanhuangwudi
 section: 黄帝时期
 title: 黄帝战蚩尤与华夏统一
 ---

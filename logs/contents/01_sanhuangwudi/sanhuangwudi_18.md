@@ -1,6 +1,6 @@
----
-id: sanhuang_18
-era: sanhuang
+﻿---
+id: sanhuangwudi_18
+era: sanhuangwudi
 section: 尧时期
 title: 尧治水与鲧禹治水前奏
 ---

@@ -1,6 +1,6 @@
----
-id: sanhuang_13
-era: sanhuang
+﻿---
+id: sanhuangwudi_13
+era: sanhuangwudi
 section: 颛顼时期
 title: 颛顼绝地天通与宗教改革
 ---

@@ -1,6 +1,6 @@
----
-id: sanhuang_06
-era: sanhuang
+﻿---
+id: sanhuangwudi_06
+era: sanhuangwudi
 section: 黄帝时期
 title: 仓颉造字与文明传承
 ---

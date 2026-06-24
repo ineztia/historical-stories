@@ -1,6 +1,6 @@
----
-id: sanhuang_11
-era: sanhuang
+﻿---
+id: sanhuangwudi_11
+era: sanhuangwudi
 section: 黄帝时期
 title: 黄帝制器与工艺发展
 ---

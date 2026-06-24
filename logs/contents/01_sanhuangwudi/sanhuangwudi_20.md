@@ -1,6 +1,6 @@
----
-id: sanhuang_20
-era: sanhuang
+﻿---
+id: sanhuangwudi_20
+era: sanhuangwudi
 section: 尧时期
 title: 尧制陶与手工业发展
 ---

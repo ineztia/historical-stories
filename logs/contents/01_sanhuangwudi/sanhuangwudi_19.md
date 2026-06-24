@@ -1,6 +1,6 @@
----
-id: sanhuang_19
-era: sanhuang
+﻿---
+id: sanhuangwudi_19
+era: sanhuangwudi
 section: 尧时期
 title: 尧设诽谤木与谏议制度
 ---

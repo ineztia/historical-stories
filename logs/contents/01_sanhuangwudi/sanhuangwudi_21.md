@@ -1,6 +1,6 @@
----
-id: sanhuang_21
-era: sanhuang
+﻿---
+id: sanhuangwudi_21
+era: sanhuangwudi
 section: 舜时期
 title: 舜孝感动天与道德典范
 ---

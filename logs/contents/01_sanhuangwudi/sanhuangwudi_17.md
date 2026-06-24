@@ -1,6 +1,6 @@
----
-id: sanhuang_17
-era: sanhuang
+﻿---
+id: sanhuangwudi_17
+era: sanhuangwudi
 section: 尧时期
 title: 尧舜禅让与政治理想
 ---

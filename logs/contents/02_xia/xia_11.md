@@ -1,4 +1,4 @@
----
+﻿---
 id: xia_11
 era: xia
 section: 寒浞篡权时期

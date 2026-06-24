@@ -1,6 +1,6 @@
----
-id: sanhuang_14
-era: sanhuang
+﻿---
+id: sanhuangwudi_14
+era: sanhuangwudi
 section: 颛顼时期
 title: 颛顼平定共工与四方安定
 ---

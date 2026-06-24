@@ -1,4 +1,4 @@
----
+﻿---
 id: xia_24
 era: xia
 section: 皋时期

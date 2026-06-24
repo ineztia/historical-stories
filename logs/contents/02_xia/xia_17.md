@@ -1,4 +1,4 @@
----
+﻿---
 id: xia_17
 era: xia
 section: 芒时期

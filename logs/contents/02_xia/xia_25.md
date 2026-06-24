@@ -1,4 +1,4 @@
----
+﻿---
 id: xia_25
 era: xia
 section: 发时期

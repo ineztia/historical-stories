@@ -1,6 +1,6 @@
----
-id: sanhuang_01
-era: sanhuang
+﻿---
+id: sanhuangwudi_01
+era: sanhuangwudi
 section: 伏羲时期
 title: 伏羲画卦与文明肇始
 ---

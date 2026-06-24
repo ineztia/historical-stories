@@ -1,6 +1,6 @@
----
-id: sanhuang_23
-era: sanhuang
+﻿---
+id: sanhuangwudi_23
+era: sanhuangwudi
 section: 舜时期
 title: 舜设五刑与法制建设
 ---

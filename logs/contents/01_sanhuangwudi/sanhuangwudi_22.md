@@ -1,6 +1,6 @@
----
-id: sanhuang_22
-era: sanhuang
+﻿---
+id: sanhuangwudi_22
+era: sanhuangwudi
 section: 舜时期
 title: 大禹治水与九州划分
 ---

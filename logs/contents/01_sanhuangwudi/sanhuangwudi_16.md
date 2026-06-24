@@ -1,6 +1,6 @@
----
-id: sanhuang_16
-era: sanhuang
+﻿---
+id: sanhuangwudi_16
+era: sanhuangwudi
 section: 帝喾时期
 title: 帝喾设官分职与治理体系
 ---

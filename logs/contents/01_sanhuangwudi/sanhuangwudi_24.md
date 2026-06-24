@@ -1,6 +1,6 @@
----
-id: sanhuang_24
-era: sanhuang
+﻿---
+id: sanhuangwudi_24
+era: sanhuangwudi
 section: 舜时期
 title: 舜命官与政治完善
 ---

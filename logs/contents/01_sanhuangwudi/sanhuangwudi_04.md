@@ -1,6 +1,6 @@
----
-id: sanhuang_04
-era: sanhuang
+﻿---
+id: sanhuangwudi_04
+era: sanhuangwudi
 section: 神农时期
 title: 神农教民稼穑与农业肇始
 ---

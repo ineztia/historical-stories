@@ -55,30 +55,25 @@
 
 进入新时代前先判定本时代所属叙事线：
 
-1. 用户明确指定时直接走指定分支。
-2. `progress.md` 已存在该时代并行叙事线 → 双线并行（正史优先）：先完成正史线当前时代待输出篇，再处理文学线对应阶段；两线进度由 `logs/progress.md` 独立指针分别记录。
-3. 该时代有符合文学线判定条件的文学巨著（见 [narrative.md §3.2.1](.agents/narrative.md)）→ 评估后告知用户，由用户决定是否开辟。
-4. 否则仅走正史线。
-
-**分支未覆盖默认行为**：
-- 用户指定文学线但该时代无符合条件巨著 → 暂停并提示用户，确认后转入正史线。
-- `progress.md` 已存在文学线但用户明确拒绝 → 按用户意见取消该线，相关文件保留或归档由用户决定。
+1. 用户明确指定叙事线或文学作品时，直接走指定分支。
+2. `progress.md` 已存在该时代并行叙事线 → 按 `logs/progress.md` 当前指针继续执行；指针不明确时询问用户本次优先处理哪一线。两线进度由 `logs/progress.md` 独立指针分别记录。
+3. 未指定且 `progress.md` 无并行线 → 默认仅走正史线。
 
 判定完成后加载 [narrative.md](.agents/narrative.md) 整体，按当前叙事线执行（正史 → §1.1 + §3.1 / 文学 → §1.2 + §3.2），各线独立暂停。
 
 ### 4.4 故事输出
 
-> 前置读取：[writing.md §1–§6](.agents/writing.md)；命名/路径见 §5；元数据与模板见 [file-spec.md §1/§3](.agents/file-spec.md)。
+> 前置读取：[writing.md §1–§7](.agents/writing.md)；命名/路径见 §5；元数据与模板见 [file-spec.md §1/§3](.agents/file-spec.md)。
 
-1. **史料预研**：两线均按 [writing.md §2.1](.agents/writing.md) 建史源索引。
-2. **写入草稿**：按 [writing.md §1–§6](.agents/writing.md) 生成完整故事。
+1. **史料预研**：两线均按 [writing.md §4.2](.agents/writing.md) 建史源索引。
+2. **写入草稿**：按 [writing.md §1–§7](.agents/writing.md) 生成完整故事。
 3. **文件落位**：按 [file-spec.md §3](.agents/file-spec.md) 元数据写入 `logs/contents/{编号}_{标识符}/<id>.md`；目录不存在须先创建；文件已存在时校验 YAML `id`（一致则覆盖，不一致则报错并暂停）。
 
 ⏳ → ✅ 转换须经 §4.5 审查通过。
 
 ### 4.5 审查校对
 
-按 [writing.md §7](.agents/writing.md) 执行校对：任一项不通过须就地修订，修订后回到校对起点重新校对；全部通过后更新 `logs/progress.md` 与 `eras/*.md`（⏳ → ✅）。
+按 [writing.md §8](.agents/writing.md) 执行校对：任一项不通过须就地修订，修订后回到校对起点重新校对；全部通过后更新 `logs/progress.md` 与 `eras/*.md`（⏳ → ✅）。
 
 ---
 
@@ -116,7 +111,7 @@
 
 | 编号 | 时代代码 | 时代名称 | 备注 |
 |------|---------|---------|------|
-| 01 | sanhuang | 三皇五帝 | 传说时代 |
+| 01 | sanhuangwudi | 三皇五帝 | 传说时代 |
 | 02 | xia | 夏 | — |
 | 03 | shang | 商 | — |
 | 04 | xizhou | 西周 | — |

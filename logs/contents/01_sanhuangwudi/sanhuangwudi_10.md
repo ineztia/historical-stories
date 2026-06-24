@@ -1,6 +1,6 @@
----
-id: sanhuang_10
-era: sanhuang
+﻿---
+id: sanhuangwudi_10
+era: sanhuangwudi
 section: 黄帝时期
 title: 黄帝内经与医学起源
 ---

@@ -1,6 +1,6 @@
----
-id: sanhuang_09
-era: sanhuang
+﻿---
+id: sanhuangwudi_09
+era: sanhuangwudi
 section: 黄帝时期
 title: 嫘祖养蚕与纺织文明
 ---

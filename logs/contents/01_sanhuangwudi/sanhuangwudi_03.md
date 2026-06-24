@@ -1,6 +1,6 @@
----
-id: sanhuang_03
-era: sanhuang
+﻿---
+id: sanhuangwudi_03
+era: sanhuangwudi
 section: 神农时期
 title: 神农尝百草与医药起源
 ---

@@ -1,6 +1,6 @@
----
-id: sanhuang_15
-era: sanhuang
+﻿---
+id: sanhuangwudi_15
+era: sanhuangwudi
 section: 帝喾时期
 title: 帝喾制定历法与天文观测
 ---

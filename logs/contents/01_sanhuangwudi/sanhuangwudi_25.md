@@ -1,6 +1,6 @@
----
-id: sanhuang_25
-era: sanhuang
+﻿---
+id: sanhuangwudi_25
+era: sanhuangwudi
 section: 三皇五帝·终章
 title: 夷夏互化融合说——从共主轮替到华夏中心化的结构性转变
 ---

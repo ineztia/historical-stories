@@ -1,4 +1,4 @@
----
+﻿---
 id: xia_22
 era: xia
 section: 孔甲时期

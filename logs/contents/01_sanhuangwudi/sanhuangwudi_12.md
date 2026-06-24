@@ -1,6 +1,6 @@
----
-id: sanhuang_12
-era: sanhuang
+﻿---
+id: sanhuangwudi_12
+era: sanhuangwudi
 section: 少昊时期
 title: 少昊金天与鸟官之制
 ---

@@ -1,4 +1,4 @@
----
+﻿---
 id: xia_10
 era: xia
 section: 相时期

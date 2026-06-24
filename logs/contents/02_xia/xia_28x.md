@@ -1,4 +1,4 @@
----
+﻿---
 id: xia_28x
 era: xia
 section: 夏朝全时代·综合通论

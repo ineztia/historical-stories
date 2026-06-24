@@ -1,6 +1,6 @@
----
-id: sanhuang_02
-era: sanhuang
+﻿---
+id: sanhuangwudi_02
+era: sanhuangwudi
 section: 伏羲时期
 title: 伏羲制嫁娶与社会秩序
 ---
