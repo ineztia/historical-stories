@@ -19,10 +19,13 @@ historical-stories/
     └── contents/          # 故事原文（按朝代分目录）
 ```
 
-**命名约定**：
-- 传承图谱：`eras/XX_name.md`（如 `01_xia.md`）
-- 故事文件：`contents/XX_name/{era}_{number}.md`（如 `xia_14.md`）
-- 记忆手卡：`contents/XX_name/{era}_{number}x.md`（不计入正式故事数）
+**命名约定**：统一采用 `{编号}_{标识符}` 结构。
+
+- `{编号}`：两位时代编号（01–20），见 `AGENTS.md` 时代代码表。
+- `{标识符}`：正史线为时代代码（如 `shang`），文学线为作品名（如 `fengshen`）。
+- 传承图谱：`eras/{编号}_{标识符}.md`（正史如 `03_shang.md`，文学线如 `03_fengshen.md`）
+- 故事文件：`contents/{编号}_{标识符}/{标识符}_{number}.md`（如 `shang_01.md`、`fengshen_01.md`）
+- 记忆手卡：`contents/{编号}_{标识符}/{标识符}_{number}x.md`（`x` 表示手卡/补充，不计入正式故事数）
 
 ## 提示词架构
 

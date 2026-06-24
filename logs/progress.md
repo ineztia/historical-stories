@@ -23,7 +23,7 @@
 
 | 并行图谱 | 关联正史 | 状态 | 进度 |
 |---------|---------|------|------|
-| 封神演义 | 商朝/西周 | 🔄 进行中 | 5/20（#1–#5 已完成，详见 `eras/02x_fengshen.md`） |
+| 封神演义 | 商朝/西周 | 🔄 进行中 | 5/20（#1–#5 已完成，详见 `eras/03_fengshen.md`） |
 
 ---
 
@@ -32,8 +32,8 @@
 - **时代**：西周
 - **当前故事**：#2 后稷教稼——周族始祖与农耕文明的起源（✅ 已完成）
 - **下一个故事**：#3 公刘迁豳与先周先公——周族早期的迁徙与积累
-- **图谱位置**：[`logs/eras/03_xizhou.md`](file:///d:/yun/baidu/BaiduSyncdisk/gpt/agents/historical-stories/historical-stories/logs/eras/03_xizhou.md)
+- **图谱位置**：[`logs/eras/04_xizhou.md`](file:///d:/yun/baidu/BaiduSyncdisk/gpt/agents/historical-stories/historical-stories/logs/eras/04_xizhou.md)
 
 ---
 
-*进度概览与执行指针；数据由 `eras/*.md` 与 `contents/<era_dir>/*.md` 汇总*
+*进度概览与执行指针；数据由 `eras/*.md` 与 `contents/{编号}_{标识符}/*.md` 汇总*
