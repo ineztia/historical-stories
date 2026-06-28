@@ -257,12 +257,12 @@ title: 故事标题
 
 ## 7. 临时校对文档
 
-`writing.md §8.3` 要求校对时维护临时校对进程文档，其规范如下。
+`writing.md §8.3` 要求校对时维护校对记录文档，其规范如下。
 
 ### 7.1 路径与命名
 
 ```
-logs/contents/<era_dir>/<id>.proof.md
+temp/<era_dir>/<id>.proof.md
 ```
 
 其中 `<era_dir>` 与 `<id>` 与对应故事文件一致。
